@@ -18,6 +18,8 @@
 #import "UIView+XMGExtension.h"
 #import "UIBarButtonItem+XMGExtension.h"
 #import "UITextField+XMGExtension.h"
+#import "NSString+NString_Extension.h"
+
 #import "XMGConst.h"
 /*** 日志 ***/
 #ifdef DEBUG

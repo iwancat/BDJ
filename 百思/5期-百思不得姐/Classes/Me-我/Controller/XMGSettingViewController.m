@@ -8,19 +8,24 @@
 
 #import "XMGSettingViewController.h"
 #import "XMGTestViewController.h"
-
+#import "XMGClearCacheCell.h"
 @interface XMGSettingViewController ()
 
 @end
 
 @implementation XMGSettingViewController
 
+static NSString * const XMGClearCacheCellId = @"XMGClearCacheCell";
+- (instancetype)init
+{
+    return [self initWithStyle:UITableViewStyleGrouped];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = XMGCommonBgColor;
     self.navigationItem.title = @"设置";
-    [self getCacheSize];
+    [self.tableView registerClass:[XMGClearCacheCell class] forCellReuseIdentifier:XMGClearCacheCellId];
 }
 
 - (void)getCacheSize
@@ -96,23 +101,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 1.确定重用标示:
-    static NSString *ID = @"setting";
+    // 取出cell
+    XMGClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGClearCacheCellId];
     
-    // 2.从缓存池中取
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
-    // 3.如果空就手动创建
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    // [SDImageCache sharedImageCache].getSize;
-    
-    cell.textLabel.text = @"清除缓存(812KB)";
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+    // 返回cell
     return cell;
+}
+
+#pragma mark - 代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGLogFunc
 }
 
 @end
