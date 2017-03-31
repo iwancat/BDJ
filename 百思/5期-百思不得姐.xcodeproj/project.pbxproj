@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		129C25503EC554E05ACBB4FC /* libPods-5期-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D083E6F351F411B25ABC9C /* libPods-5期-百思不得姐.a */; };
+		1F045B921E8C8A3F0025EF16 /* XMGAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F045B911E8C8A3F0025EF16 /* XMGAllViewController.m */; };
+		1F045B951E8C8A580025EF16 /* XMGVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F045B941E8C8A580025EF16 /* XMGVideoViewController.m */; };
+		1F045B981E8C8A680025EF16 /* XMGVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F045B971E8C8A680025EF16 /* XMGVoiceViewController.m */; };
+		1F045B9B1E8C8A7B0025EF16 /* XMGPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F045B9A1E8C8A7B0025EF16 /* XMGPictureViewController.m */; };
+		1F045B9E1E8C8AB60025EF16 /* XMGWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F045B9D1E8C8AB60025EF16 /* XMGWordViewController.m */; };
 		1F470A611E8A4D1E00130474 /* XMGClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A601E8A4D1E00130474 /* XMGClearCacheCell.m */; };
 		1F470A641E8A8B1500130474 /* NSString+NString_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A631E8A8B1500130474 /* NSString+NString_Extension.m */; };
 		1F6A23E91E7E82EB009A56CD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */; };
@@ -16,6 +21,7 @@
 		1F7EE47F1E7E7DF30003C43F /* XMGMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EE47E1E7E7DF30003C43F /* XMGMeCell.m */; };
 		1FAE24731E8B47AD007DBC82 /* XMGOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE24711E8B47AD007DBC82 /* XMGOtherCell.m */; };
 		1FAE24741E8B47AD007DBC82 /* XMGOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE24721E8B47AD007DBC82 /* XMGOtherCell.xib */; };
+		1FAE24771E8BDAF9007DBC82 /* XMGTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE24761E8BDAF9007DBC82 /* XMGTitleButton.m */; };
 		1FB0E4D21E80BB0E00A48A40 /* XMGMeButten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0E4D11E80BB0E00A48A40 /* XMGMeButten.m */; };
 		1FB0E4DB1E80FFFD00A48A40 /* XMGWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0E4D91E80FFFD00A48A40 /* XMGWebController.m */; };
 		1FB0E4DC1E80FFFD00A48A40 /* XMGWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0E4DA1E80FFFD00A48A40 /* XMGWebController.xib */; };
@@ -65,6 +71,16 @@
 
 /* Begin PBXFileReference section */
 		04EA6F8376F1DE2D29B0AA36 /* Pods-5期-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5期-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-5期-百思不得姐/Pods-5期-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		1F045B901E8C8A3F0025EF16 /* XMGAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAllViewController.h; sourceTree = "<group>"; };
+		1F045B911E8C8A3F0025EF16 /* XMGAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAllViewController.m; sourceTree = "<group>"; };
+		1F045B931E8C8A580025EF16 /* XMGVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVideoViewController.h; sourceTree = "<group>"; };
+		1F045B941E8C8A580025EF16 /* XMGVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVideoViewController.m; sourceTree = "<group>"; };
+		1F045B961E8C8A680025EF16 /* XMGVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVoiceViewController.h; sourceTree = "<group>"; };
+		1F045B971E8C8A680025EF16 /* XMGVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVoiceViewController.m; sourceTree = "<group>"; };
+		1F045B991E8C8A7B0025EF16 /* XMGPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPictureViewController.h; sourceTree = "<group>"; };
+		1F045B9A1E8C8A7B0025EF16 /* XMGPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPictureViewController.m; sourceTree = "<group>"; };
+		1F045B9C1E8C8AB60025EF16 /* XMGWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWordViewController.h; sourceTree = "<group>"; };
+		1F045B9D1E8C8AB60025EF16 /* XMGWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWordViewController.m; sourceTree = "<group>"; };
 		1F351ED21E7F60CD009A4641 /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "Pods/../build/Debug-iphoneos/MJExtension/libMJExtension.a"; sourceTree = "<group>"; };
 		1F351ED31E7F60CD009A4641 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		1F470A5F1E8A4D1E00130474 /* XMGClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGClearCacheCell.h; sourceTree = "<group>"; };
@@ -81,6 +97,8 @@
 		1FAE24701E8B47AD007DBC82 /* XMGOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGOtherCell.h; sourceTree = "<group>"; };
 		1FAE24711E8B47AD007DBC82 /* XMGOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGOtherCell.m; sourceTree = "<group>"; };
 		1FAE24721E8B47AD007DBC82 /* XMGOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGOtherCell.xib; sourceTree = "<group>"; };
+		1FAE24751E8BDAF9007DBC82 /* XMGTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTitleButton.h; sourceTree = "<group>"; };
+		1FAE24761E8BDAF9007DBC82 /* XMGTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTitleButton.m; sourceTree = "<group>"; };
 		1FB0E4D01E80BB0E00A48A40 /* XMGMeButten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeButten.h; sourceTree = "<group>"; };
 		1FB0E4D11E80BB0E00A48A40 /* XMGMeButten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeButten.m; sourceTree = "<group>"; };
 		1FB0E4D81E80FFFD00A48A40 /* XMGWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWebController.h; sourceTree = "<group>"; };
@@ -209,6 +227,16 @@
 			children = (
 				7038B4F31BEC5E4F005DBC09 /* XMGEssenceViewController.h */,
 				7038B4F41BEC5E4F005DBC09 /* XMGEssenceViewController.m */,
+				1F045B901E8C8A3F0025EF16 /* XMGAllViewController.h */,
+				1F045B911E8C8A3F0025EF16 /* XMGAllViewController.m */,
+				1F045B931E8C8A580025EF16 /* XMGVideoViewController.h */,
+				1F045B941E8C8A580025EF16 /* XMGVideoViewController.m */,
+				1F045B961E8C8A680025EF16 /* XMGVoiceViewController.h */,
+				1F045B971E8C8A680025EF16 /* XMGVoiceViewController.m */,
+				1F045B991E8C8A7B0025EF16 /* XMGPictureViewController.h */,
+				1F045B9A1E8C8A7B0025EF16 /* XMGPictureViewController.m */,
+				1F045B9C1E8C8AB60025EF16 /* XMGWordViewController.h */,
+				1F045B9D1E8C8AB60025EF16 /* XMGWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +251,8 @@
 		7038B4F61BEC5E4F005DBC09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FAE24751E8BDAF9007DBC82 /* XMGTitleButton.h */,
+				1FAE24761E8BDAF9007DBC82 /* XMGTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -714,17 +744,20 @@
 				703C1E381BEC9ACF0043E5A4 /* XMGSettingViewController.m in Sources */,
 				703C1E3B1BEC9B600043E5A4 /* XMGTestViewController.m in Sources */,
 				7038B5191BEC5E4F005DBC09 /* XMGMeViewController.m in Sources */,
+				1F045B981E8C8A680025EF16 /* XMGVoiceViewController.m in Sources */,
 				703C1E411BEC9F770043E5A4 /* XMGNavigationController.m in Sources */,
 				7038B5281BEC95B5005DBC09 /* XMGRecommendFollowViewController.m in Sources */,
 				7038B51C1BEC5E4F005DBC09 /* UIView+XMGExtension.m in Sources */,
 				1FAE24731E8B47AD007DBC82 /* XMGOtherCell.m in Sources */,
 				1F7EE47F1E7E7DF30003C43F /* XMGMeCell.m in Sources */,
 				1F470A641E8A8B1500130474 /* NSString+NString_Extension.m in Sources */,
+				1FAE24771E8BDAF9007DBC82 /* XMGTitleButton.m in Sources */,
 				1FEDEFF81E7FCD4E006341CB /* XMGMeSquare.m in Sources */,
 				7038B5181BEC5E4F005DBC09 /* XMGFollowViewController.m in Sources */,
 				705D9F311BEF3B15003A9857 /* XMGTabBar.m in Sources */,
 				1F470A611E8A4D1E00130474 /* XMGClearCacheCell.m in Sources */,
 				1FB0E4D21E80BB0E00A48A40 /* XMGMeButten.m in Sources */,
+				1F045B9E1E8C8AB60025EF16 /* XMGWordViewController.m in Sources */,
 				1FB0E4DB1E80FFFD00A48A40 /* XMGWebController.m in Sources */,
 				705D9F2D1BEF2BBD003A9857 /* XMGLoginRegisterViewController.m in Sources */,
 				7038B51E1BEC5E4F005DBC09 /* XMGTabBarController.m in Sources */,
@@ -735,8 +768,11 @@
 				7038B5251BEC8EEB005DBC09 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */,
 				1F7EE4791E7E7B860003C43F /* XMGConst.m in Sources */,
+				1F045B951E8C8A580025EF16 /* XMGVideoViewController.m in Sources */,
 				708B363D1BF02B75006C13B9 /* XMGLoginRegisterTextField.m in Sources */,
+				1F045B9B1E8C8A7B0025EF16 /* XMGPictureViewController.m in Sources */,
 				705D9F341BEF3B28003A9857 /* XMGQuickLoginButton.m in Sources */,
+				1F045B921E8C8A3F0025EF16 /* XMGAllViewController.m in Sources */,
 				7038B51B1BEC5E4F005DBC09 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
