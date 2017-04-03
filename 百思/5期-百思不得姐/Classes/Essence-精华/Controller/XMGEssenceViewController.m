@@ -66,7 +66,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.backgroundColor = XMGRandomColor;
+    //scrollView.backgroundColor = XMGRandomColor;
     scrollView.frame = self.view.bounds;
     scrollView.pagingEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;

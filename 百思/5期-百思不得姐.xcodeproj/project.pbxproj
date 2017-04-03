@@ -16,6 +16,8 @@
 		1F2AC9421E8DDE5400F07AA6 /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AC9411E8DDE5400F07AA6 /* XMGTopic.m */; };
 		1F2AC9451E8DEABB00F07AA6 /* XMGRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AC9441E8DEABB00F07AA6 /* XMGRefreshHeader.m */; };
 		1F2AC9481E8DF04600F07AA6 /* XMGRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AC9471E8DF04600F07AA6 /* XMGRefreshFooter.m */; };
+		1F2AC94B1E8E4A8A00F07AA6 /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AC94A1E8E4A8A00F07AA6 /* XMGTopicCell.m */; };
+		1F2AC94D1E8E4CDB00F07AA6 /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2AC94C1E8E4CDB00F07AA6 /* XMGTopicCell.xib */; };
 		1F470A611E8A4D1E00130474 /* XMGClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A601E8A4D1E00130474 /* XMGClearCacheCell.m */; };
 		1F470A641E8A8B1500130474 /* NSString+NString_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A631E8A8B1500130474 /* NSString+NString_Extension.m */; };
 		1F6A23E91E7E82EB009A56CD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */; };
@@ -90,6 +92,9 @@
 		1F2AC9441E8DEABB00F07AA6 /* XMGRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRefreshHeader.m; sourceTree = "<group>"; };
 		1F2AC9461E8DF04600F07AA6 /* XMGRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRefreshFooter.h; sourceTree = "<group>"; };
 		1F2AC9471E8DF04600F07AA6 /* XMGRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRefreshFooter.m; sourceTree = "<group>"; };
+		1F2AC9491E8E4A8A00F07AA6 /* XMGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicCell.h; sourceTree = "<group>"; };
+		1F2AC94A1E8E4A8A00F07AA6 /* XMGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicCell.m; sourceTree = "<group>"; };
+		1F2AC94C1E8E4CDB00F07AA6 /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
 		1F351ED21E7F60CD009A4641 /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "Pods/../build/Debug-iphoneos/MJExtension/libMJExtension.a"; sourceTree = "<group>"; };
 		1F351ED31E7F60CD009A4641 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		1F470A5F1E8A4D1E00130474 /* XMGClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGClearCacheCell.h; sourceTree = "<group>"; };
@@ -264,6 +269,9 @@
 			children = (
 				1FAE24751E8BDAF9007DBC82 /* XMGTitleButton.h */,
 				1FAE24761E8BDAF9007DBC82 /* XMGTitleButton.m */,
+				1F2AC9491E8E4A8A00F07AA6 /* XMGTopicCell.h */,
+				1F2AC94A1E8E4A8A00F07AA6 /* XMGTopicCell.m */,
+				1F2AC94C1E8E4CDB00F07AA6 /* XMGTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +644,7 @@
 			files = (
 				705D9F291BEF25CB003A9857 /* XMGFollowViewController.xib in Resources */,
 				7057B7231BEAEFE8007D60F7 /* Assets.xcassets in Resources */,
+				1F2AC94D1E8E4CDB00F07AA6 /* XMGTopicCell.xib in Resources */,
 				705D9F2E1BEF2BBD003A9857 /* XMGLoginRegisterViewController.xib in Resources */,
 				1FB0E4DC1E80FFFD00A48A40 /* XMGWebController.xib in Resources */,
 				1FAE24741E8B47AD007DBC82 /* XMGOtherCell.xib in Resources */,
@@ -791,6 +800,7 @@
 				1F045B9B1E8C8A7B0025EF16 /* XMGPictureViewController.m in Sources */,
 				705D9F341BEF3B28003A9857 /* XMGQuickLoginButton.m in Sources */,
 				1F045B921E8C8A3F0025EF16 /* XMGAllViewController.m in Sources */,
+				1F2AC94B1E8E4A8A00F07AA6 /* XMGTopicCell.m in Sources */,
 				7038B51B1BEC5E4F005DBC09 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
