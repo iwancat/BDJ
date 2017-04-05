@@ -7,6 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+//typedef enum {
+//    /** 图片 */
+//    XMGTopicTypePicture = 10,
+//    /** 段子 */
+//    XMGTopicTypeWord = 29,
+//    /** 声音 */
+//    XMGTopicTypeVoice = 31,
+//    /** 视频 */
+//    XMGTopicTypeVideo = 41,
+//} XMGTopicType;
+
+typedef NS_ENUM(NSUInteger, XMGTopicType) {
+    /** 图片 */
+    XMGTopicTypePicture = 10,
+    /** 段子 */
+    XMGTopicTypeWord = 29,
+    /** 声音 */
+    XMGTopicTypeVoice = 31,
+    /** 视频 */
+    XMGTopicTypeVideo = 41
+};
+
+@class XMGComment;
 
 @interface XMGTopic : NSObject
 /** 用户的名字 */
@@ -25,4 +48,11 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
+
+/** 最热评论 */
+@property (nonatomic, strong) XMGComment *top_cmt;
+
+/** 帖子类型 */
+@property (nonatomic, assign) XMGTopicType type;
+
 @end

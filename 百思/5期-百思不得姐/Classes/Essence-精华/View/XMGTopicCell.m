@@ -8,6 +8,8 @@
 
 #import "XMGTopicCell.h"
 #import <UIImageView+WebCache.h>
+#import "XMGComment.h"
+#import "XMGUser.h"
 
 @interface XMGTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -68,7 +70,7 @@
     
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.nameLabel.text = topic.name;
-    self.createdAtLabel.text = topic.created_at;
+    self.createdAtLabel.text = topic.created_at; // 调用get方法[topic created_at];
     self.text_label.text = topic.text;
     
     //    if (topic.ding >= 10000) {
@@ -101,6 +103,49 @@
      比如0 -> 评论
      
      */
+    
+    // 没有最热评论
+    // topic.top_cmt = @[];
+    
+    // 有最热评论
+    // topic.top_cmt = @[@{}];
+    
+    // 最热评论 不能用if (topic.top_cmt)
+    // if (topic.top_cmt.count) { // 有最热评论
+    
+//    NSDictionary *comment = topic.top_cmt.firstObject;
+//    if (comment) { // 有最热评论
+//        self.topCmtView.hidden = NO;
+//        
+//        NSString *username = comment[@"user"][@"username"]; // 用户名
+//        NSString *content = comment[@"content"]; // 评论内容
+//        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", username, content];
+//    } else { // 没有最热评论
+//        self.topCmtView.hidden = YES;
+//    }
+    // 最热评论
+    if (topic.top_cmt) { // 有最热评论
+        self.topCmtView.hidden = NO;
+        
+        NSString *username = topic.top_cmt.user.username; // 用户名
+        NSString *content = topic.top_cmt.content; // 评论内容
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", username, content];
+    } else { // 没有最热评论
+        self.topCmtView.hidden = YES;
+    }
+    
+    // 中间内容
+#pragma mark - 根据XMGTopic模型数据的情况来决定中间添加什么控件(内容)
+    if (topic.type == XMGTopicTypeVideo) { // 视频
+        
+    } else if (topic.type == XMGTopicTypeVoice) { // 音频
+        
+    } else if (topic.type == XMGTopicTypeWord) { // 段子
+        
+    } else if (topic.type == XMGTopicTypePicture) { // 图片
+        
+    }
+
 }
 
 /**

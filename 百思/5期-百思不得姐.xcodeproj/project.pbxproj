@@ -20,6 +20,11 @@
 		1F2AC94D1E8E4CDB00F07AA6 /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2AC94C1E8E4CDB00F07AA6 /* XMGTopicCell.xib */; };
 		1F470A611E8A4D1E00130474 /* XMGClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A601E8A4D1E00130474 /* XMGClearCacheCell.m */; };
 		1F470A641E8A8B1500130474 /* NSString+NString_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F470A631E8A8B1500130474 /* NSString+NString_Extension.m */; };
+		1F5647031E9478CA00C4AF97 /* NSDate+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647021E9478CA00C4AF97 /* NSDate+XMGExtension.m */; };
+		1F5647061E9478F100C4AF97 /* NSCalendar+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647051E9478F100C4AF97 /* NSCalendar+XMGExtension.m */; };
+		1F5647091E9487DD00C4AF97 /* XMGComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647081E9487DD00C4AF97 /* XMGComment.m */; };
+		1F56470C1E9487F000C4AF97 /* XMGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56470B1E9487F000C4AF97 /* XMGUser.m */; };
+		1F56470F1E9489D700C4AF97 /* XMGExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */; };
 		1F6A23E91E7E82EB009A56CD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */; };
 		1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EE4751E7E7B4A0003C43F /* XMGMeFooterView.m */; };
 		1F7EE4791E7E7B860003C43F /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EE4781E7E7B860003C43F /* XMGConst.m */; };
@@ -101,6 +106,16 @@
 		1F470A601E8A4D1E00130474 /* XMGClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGClearCacheCell.m; sourceTree = "<group>"; };
 		1F470A621E8A8B1500130474 /* NSString+NString_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NString_Extension.h"; sourceTree = "<group>"; };
 		1F470A631E8A8B1500130474 /* NSString+NString_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NString_Extension.m"; sourceTree = "<group>"; };
+		1F5647011E9478CA00C4AF97 /* NSDate+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XMGExtension.h"; sourceTree = "<group>"; };
+		1F5647021E9478CA00C4AF97 /* NSDate+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XMGExtension.m"; sourceTree = "<group>"; };
+		1F5647041E9478F100C4AF97 /* NSCalendar+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+XMGExtension.h"; sourceTree = "<group>"; };
+		1F5647051E9478F100C4AF97 /* NSCalendar+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+XMGExtension.m"; sourceTree = "<group>"; };
+		1F5647071E9487DD00C4AF97 /* XMGComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGComment.h; sourceTree = "<group>"; };
+		1F5647081E9487DD00C4AF97 /* XMGComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGComment.m; sourceTree = "<group>"; };
+		1F56470A1E9487F000C4AF97 /* XMGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGUser.h; sourceTree = "<group>"; };
+		1F56470B1E9487F000C4AF97 /* XMGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGUser.m; sourceTree = "<group>"; };
+		1F56470D1E9489D700C4AF97 /* XMGExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGExtensionConfig.h; sourceTree = "<group>"; };
+		1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGExtensionConfig.m; sourceTree = "<group>"; };
 		1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		1F7EE4741E7E7B4A0003C43F /* XMGMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeFooterView.h; sourceTree = "<group>"; };
 		1F7EE4751E7E7B4A0003C43F /* XMGMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeFooterView.m; sourceTree = "<group>"; };
@@ -260,6 +275,10 @@
 			children = (
 				1F2AC9401E8DDE5400F07AA6 /* XMGTopic.h */,
 				1F2AC9411E8DDE5400F07AA6 /* XMGTopic.m */,
+				1F5647071E9487DD00C4AF97 /* XMGComment.h */,
+				1F5647081E9487DD00C4AF97 /* XMGComment.m */,
+				1F56470A1E9487F000C4AF97 /* XMGUser.h */,
+				1F56470B1E9487F000C4AF97 /* XMGUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +429,8 @@
 				7038B5151BEC5E4F005DBC09 /* PrefixHeader.pch */,
 				1F7EE4771E7E7B860003C43F /* XMGConst.h */,
 				1F7EE4781E7E7B860003C43F /* XMGConst.m */,
+				1F56470D1E9489D700C4AF97 /* XMGExtensionConfig.h */,
+				1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -425,6 +446,10 @@
 				702896201BF09D3200C425C9 /* UITextField+XMGExtension.m */,
 				1F470A621E8A8B1500130474 /* NSString+NString_Extension.h */,
 				1F470A631E8A8B1500130474 /* NSString+NString_Extension.m */,
+				1F5647011E9478CA00C4AF97 /* NSDate+XMGExtension.h */,
+				1F5647021E9478CA00C4AF97 /* NSDate+XMGExtension.m */,
+				1F5647041E9478F100C4AF97 /* NSCalendar+XMGExtension.h */,
+				1F5647051E9478F100C4AF97 /* NSCalendar+XMGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -772,6 +797,7 @@
 				1F045B981E8C8A680025EF16 /* XMGVoiceViewController.m in Sources */,
 				703C1E411BEC9F770043E5A4 /* XMGNavigationController.m in Sources */,
 				7038B5281BEC95B5005DBC09 /* XMGRecommendFollowViewController.m in Sources */,
+				1F5647031E9478CA00C4AF97 /* NSDate+XMGExtension.m in Sources */,
 				1F2AC9481E8DF04600F07AA6 /* XMGRefreshFooter.m in Sources */,
 				7038B51C1BEC5E4F005DBC09 /* UIView+XMGExtension.m in Sources */,
 				1FAE24731E8B47AD007DBC82 /* XMGOtherCell.m in Sources */,
@@ -794,6 +820,9 @@
 				7038B51F1BEC5E4F005DBC09 /* main.m in Sources */,
 				7038B5251BEC8EEB005DBC09 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */,
+				1F56470F1E9489D700C4AF97 /* XMGExtensionConfig.m in Sources */,
+				1F5647091E9487DD00C4AF97 /* XMGComment.m in Sources */,
+				1F5647061E9478F100C4AF97 /* NSCalendar+XMGExtension.m in Sources */,
 				1F7EE4791E7E7B860003C43F /* XMGConst.m in Sources */,
 				1F045B951E8C8A580025EF16 /* XMGVideoViewController.m in Sources */,
 				708B363D1BF02B75006C13B9 /* XMGLoginRegisterTextField.m in Sources */,
@@ -801,6 +830,7 @@
 				705D9F341BEF3B28003A9857 /* XMGQuickLoginButton.m in Sources */,
 				1F045B921E8C8A3F0025EF16 /* XMGAllViewController.m in Sources */,
 				1F2AC94B1E8E4A8A00F07AA6 /* XMGTopicCell.m in Sources */,
+				1F56470C1E9487F000C4AF97 /* XMGUser.m in Sources */,
 				7038B51B1BEC5E4F005DBC09 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
