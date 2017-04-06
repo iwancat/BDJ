@@ -13,8 +13,11 @@
 @end
 
 @implementation XMGPictureViewController
-
-- (void)viewDidLoad {
+- (XMGTopicType)type
+{
+    return XMGTopicTypePicture;
+}
+/*- (void)viewDidLoad {
     [super viewDidLoad];
     
     XMGLogFunc
@@ -44,5 +47,5 @@
     
     return cell;
 }
-
+*/
 @end

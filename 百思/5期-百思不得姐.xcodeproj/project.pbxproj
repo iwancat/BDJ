@@ -25,6 +25,14 @@
 		1F5647091E9487DD00C4AF97 /* XMGComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647081E9487DD00C4AF97 /* XMGComment.m */; };
 		1F56470C1E9487F000C4AF97 /* XMGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56470B1E9487F000C4AF97 /* XMGUser.m */; };
 		1F56470F1E9489D700C4AF97 /* XMGExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */; };
+		1F5647191E950E3500C4AF97 /* XMGTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647111E950E3500C4AF97 /* XMGTopicPictureView.m */; };
+		1F56471A1E950E3500C4AF97 /* XMGTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5647121E950E3500C4AF97 /* XMGTopicPictureView.xib */; };
+		1F56471B1E950E3500C4AF97 /* XMGTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647141E950E3500C4AF97 /* XMGTopicVideoView.m */; };
+		1F56471C1E950E3500C4AF97 /* XMGTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5647151E950E3500C4AF97 /* XMGTopicVideoView.xib */; };
+		1F56471D1E950E3500C4AF97 /* XMGTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647171E950E3500C4AF97 /* XMGTopicVoiceView.m */; };
+		1F56471E1E950E3500C4AF97 /* XMGTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5647181E950E3500C4AF97 /* XMGTopicVoiceView.xib */; };
+		1F5647211E95201A00C4AF97 /* XMGTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647201E95201A00C4AF97 /* XMGTopicViewController.m */; };
+		1F5647241E9520E000C4AF97 /* XMGHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5647231E9520E000C4AF97 /* XMGHTTPSessionManager.m */; };
 		1F6A23E91E7E82EB009A56CD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */; };
 		1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EE4751E7E7B4A0003C43F /* XMGMeFooterView.m */; };
 		1F7EE4791E7E7B860003C43F /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EE4781E7E7B860003C43F /* XMGConst.m */; };
@@ -35,6 +43,8 @@
 		1FB0E4D21E80BB0E00A48A40 /* XMGMeButten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0E4D11E80BB0E00A48A40 /* XMGMeButten.m */; };
 		1FB0E4DB1E80FFFD00A48A40 /* XMGWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0E4D91E80FFFD00A48A40 /* XMGWebController.m */; };
 		1FB0E4DC1E80FFFD00A48A40 /* XMGWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0E4DA1E80FFFD00A48A40 /* XMGWebController.xib */; };
+		1FB4C3E31E95C9E8004FCF4D /* XMGSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4C3E11E95C9E8004FCF4D /* XMGSeeBigViewController.m */; };
+		1FB4C3E41E95C9E8004FCF4D /* XMGSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4C3E21E95C9E8004FCF4D /* XMGSeeBigViewController.xib */; };
 		1FEDEFF81E7FCD4E006341CB /* XMGMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDEFF71E7FCD4E006341CB /* XMGMeSquare.m */; };
 		702896211BF09D3200C425C9 /* UITextField+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 702896201BF09D3200C425C9 /* UITextField+XMGExtension.m */; };
 		7038B5171BEC5E4F005DBC09 /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7038B4F41BEC5E4F005DBC09 /* XMGEssenceViewController.m */; };
@@ -59,7 +69,6 @@
 		705D9F311BEF3B15003A9857 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 705D9F301BEF3B15003A9857 /* XMGTabBar.m */; };
 		705D9F341BEF3B28003A9857 /* XMGQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 705D9F331BEF3B28003A9857 /* XMGQuickLoginButton.m */; };
 		708B363D1BF02B75006C13B9 /* XMGLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 708B363C1BF02B75006C13B9 /* XMGLoginRegisterTextField.m */; };
-		AE7EFB0A05F1F3BDC9F542BF /* libPods-5期-百思不得姐Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61720453110FFD7AE7DD70 /* libPods-5期-百思不得姐Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +125,19 @@
 		1F56470B1E9487F000C4AF97 /* XMGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGUser.m; sourceTree = "<group>"; };
 		1F56470D1E9489D700C4AF97 /* XMGExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGExtensionConfig.h; sourceTree = "<group>"; };
 		1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGExtensionConfig.m; sourceTree = "<group>"; };
+		1F5647101E950E3500C4AF97 /* XMGTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicPictureView.h; sourceTree = "<group>"; };
+		1F5647111E950E3500C4AF97 /* XMGTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicPictureView.m; sourceTree = "<group>"; };
+		1F5647121E950E3500C4AF97 /* XMGTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicPictureView.xib; sourceTree = "<group>"; };
+		1F5647131E950E3500C4AF97 /* XMGTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicVideoView.h; sourceTree = "<group>"; };
+		1F5647141E950E3500C4AF97 /* XMGTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicVideoView.m; sourceTree = "<group>"; };
+		1F5647151E950E3500C4AF97 /* XMGTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicVideoView.xib; sourceTree = "<group>"; };
+		1F5647161E950E3500C4AF97 /* XMGTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicVoiceView.h; sourceTree = "<group>"; };
+		1F5647171E950E3500C4AF97 /* XMGTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicVoiceView.m; sourceTree = "<group>"; };
+		1F5647181E950E3500C4AF97 /* XMGTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicVoiceView.xib; sourceTree = "<group>"; };
+		1F56471F1E95201A00C4AF97 /* XMGTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicViewController.h; sourceTree = "<group>"; };
+		1F5647201E95201A00C4AF97 /* XMGTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicViewController.m; sourceTree = "<group>"; };
+		1F5647221E9520E000C4AF97 /* XMGHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGHTTPSessionManager.h; sourceTree = "<group>"; };
+		1F5647231E9520E000C4AF97 /* XMGHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGHTTPSessionManager.m; sourceTree = "<group>"; };
 		1F6A23E81E7E82EB009A56CD /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		1F7EE4741E7E7B4A0003C43F /* XMGMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeFooterView.h; sourceTree = "<group>"; };
 		1F7EE4751E7E7B4A0003C43F /* XMGMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeFooterView.m; sourceTree = "<group>"; };
@@ -133,6 +155,9 @@
 		1FB0E4D81E80FFFD00A48A40 /* XMGWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWebController.h; sourceTree = "<group>"; };
 		1FB0E4D91E80FFFD00A48A40 /* XMGWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWebController.m; sourceTree = "<group>"; };
 		1FB0E4DA1E80FFFD00A48A40 /* XMGWebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGWebController.xib; sourceTree = "<group>"; };
+		1FB4C3E01E95C9E8004FCF4D /* XMGSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSeeBigViewController.h; sourceTree = "<group>"; };
+		1FB4C3E11E95C9E8004FCF4D /* XMGSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSeeBigViewController.m; sourceTree = "<group>"; };
+		1FB4C3E21E95C9E8004FCF4D /* XMGSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGSeeBigViewController.xib; sourceTree = "<group>"; };
 		1FEDEFF61E7FCD4E006341CB /* XMGMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeSquare.h; sourceTree = "<group>"; };
 		1FEDEFF71E7FCD4E006341CB /* XMGMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeSquare.m; sourceTree = "<group>"; };
 		5D61720453110FFD7AE7DD70 /* libPods-5期-百思不得姐Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5期-百思不得姐Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,9 +209,7 @@
 		708B363B1BF02B75006C13B9 /* XMGLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterTextField.h; sourceTree = "<group>"; };
 		708B363C1BF02B75006C13B9 /* XMGLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterTextField.m; sourceTree = "<group>"; };
 		90D083E6F351F411B25ABC9C /* libPods-5期-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5期-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F193F6DF03199FE9BCC0BB /* Pods-5期-百思不得姐Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5期-百思不得姐Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-5期-百思不得姐Tests/Pods-5期-百思不得姐Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D04E89C5330BDCD84795EDAC /* Pods-5期-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5期-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5期-百思不得姐/Pods-5期-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
-		EAE849B55E4ED901C09A6BE8 /* Pods-5期-百思不得姐Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5期-百思不得姐Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5期-百思不得姐Tests/Pods-5期-百思不得姐Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +226,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7EFB0A05F1F3BDC9F542BF /* libPods-5期-百思不得姐Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +288,11 @@
 				1F045B9A1E8C8A7B0025EF16 /* XMGPictureViewController.m */,
 				1F045B9C1E8C8AB60025EF16 /* XMGWordViewController.h */,
 				1F045B9D1E8C8AB60025EF16 /* XMGWordViewController.m */,
+				1F56471F1E95201A00C4AF97 /* XMGTopicViewController.h */,
+				1F5647201E95201A00C4AF97 /* XMGTopicViewController.m */,
+				1FB4C3E01E95C9E8004FCF4D /* XMGSeeBigViewController.h */,
+				1FB4C3E11E95C9E8004FCF4D /* XMGSeeBigViewController.m */,
+				1FB4C3E21E95C9E8004FCF4D /* XMGSeeBigViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +318,15 @@
 				1F2AC9491E8E4A8A00F07AA6 /* XMGTopicCell.h */,
 				1F2AC94A1E8E4A8A00F07AA6 /* XMGTopicCell.m */,
 				1F2AC94C1E8E4CDB00F07AA6 /* XMGTopicCell.xib */,
+				1F5647101E950E3500C4AF97 /* XMGTopicPictureView.h */,
+				1F5647111E950E3500C4AF97 /* XMGTopicPictureView.m */,
+				1F5647121E950E3500C4AF97 /* XMGTopicPictureView.xib */,
+				1F5647131E950E3500C4AF97 /* XMGTopicVideoView.h */,
+				1F5647141E950E3500C4AF97 /* XMGTopicVideoView.m */,
+				1F5647151E950E3500C4AF97 /* XMGTopicVideoView.xib */,
+				1F5647161E950E3500C4AF97 /* XMGTopicVoiceView.h */,
+				1F5647171E950E3500C4AF97 /* XMGTopicVoiceView.m */,
+				1F5647181E950E3500C4AF97 /* XMGTopicVoiceView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +465,8 @@
 				7038B5151BEC5E4F005DBC09 /* PrefixHeader.pch */,
 				1F7EE4771E7E7B860003C43F /* XMGConst.h */,
 				1F7EE4781E7E7B860003C43F /* XMGConst.m */,
+				1F5647221E9520E000C4AF97 /* XMGHTTPSessionManager.h */,
+				1F5647231E9520E000C4AF97 /* XMGHTTPSessionManager.m */,
 				1F56470D1E9489D700C4AF97 /* XMGExtensionConfig.h */,
 				1F56470E1E9489D700C4AF97 /* XMGExtensionConfig.m */,
 			);
@@ -548,8 +586,6 @@
 			children = (
 				D04E89C5330BDCD84795EDAC /* Pods-5期-百思不得姐.debug.xcconfig */,
 				04EA6F8376F1DE2D29B0AA36 /* Pods-5期-百思不得姐.release.xcconfig */,
-				EAE849B55E4ED901C09A6BE8 /* Pods-5期-百思不得姐Tests.debug.xcconfig */,
-				B4F193F6DF03199FE9BCC0BB /* Pods-5期-百思不得姐Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -581,12 +617,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7057B7431BEAEFE9007D60F7 /* Build configuration list for PBXNativeTarget "5期-百思不得姐Tests" */;
 			buildPhases = (
-				63437950B608972B19D9ED36 /* [CP] Check Pods Manifest.lock */,
 				7057B7281BEAEFE9007D60F7 /* Sources */,
 				7057B7291BEAEFE9007D60F7 /* Frameworks */,
 				7057B72A1BEAEFE9007D60F7 /* Resources */,
-				B77F03FE8A9D78D9D69AF0B2 /* [CP] Embed Pods Frameworks */,
-				77E0BB8329E0D032EAF4B1BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -667,12 +700,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F56471E1E950E3500C4AF97 /* XMGTopicVoiceView.xib in Resources */,
 				705D9F291BEF25CB003A9857 /* XMGFollowViewController.xib in Resources */,
 				7057B7231BEAEFE8007D60F7 /* Assets.xcassets in Resources */,
 				1F2AC94D1E8E4CDB00F07AA6 /* XMGTopicCell.xib in Resources */,
+				1F56471C1E950E3500C4AF97 /* XMGTopicVideoView.xib in Resources */,
 				705D9F2E1BEF2BBD003A9857 /* XMGLoginRegisterViewController.xib in Resources */,
+				1FB4C3E41E95C9E8004FCF4D /* XMGSeeBigViewController.xib in Resources */,
 				1FB0E4DC1E80FFFD00A48A40 /* XMGWebController.xib in Resources */,
 				1FAE24741E8B47AD007DBC82 /* XMGOtherCell.xib in Resources */,
+				1F56471A1E950E3500C4AF97 /* XMGTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,21 +760,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		63437950B608972B19D9ED36 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		683F20EDACCB84FFE4D2FF1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -751,36 +773,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5期-百思不得姐/Pods-5期-百思不得姐-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77E0BB8329E0D032EAF4B1BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5期-百思不得姐Tests/Pods-5期-百思不得姐Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B77F03FE8A9D78D9D69AF0B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5期-百思不得姐Tests/Pods-5期-百思不得姐Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -797,7 +789,9 @@
 				1F045B981E8C8A680025EF16 /* XMGVoiceViewController.m in Sources */,
 				703C1E411BEC9F770043E5A4 /* XMGNavigationController.m in Sources */,
 				7038B5281BEC95B5005DBC09 /* XMGRecommendFollowViewController.m in Sources */,
+				1F56471B1E950E3500C4AF97 /* XMGTopicVideoView.m in Sources */,
 				1F5647031E9478CA00C4AF97 /* NSDate+XMGExtension.m in Sources */,
+				1F5647191E950E3500C4AF97 /* XMGTopicPictureView.m in Sources */,
 				1F2AC9481E8DF04600F07AA6 /* XMGRefreshFooter.m in Sources */,
 				7038B51C1BEC5E4F005DBC09 /* UIView+XMGExtension.m in Sources */,
 				1FAE24731E8B47AD007DBC82 /* XMGOtherCell.m in Sources */,
@@ -811,20 +805,24 @@
 				1F470A611E8A4D1E00130474 /* XMGClearCacheCell.m in Sources */,
 				1FB0E4D21E80BB0E00A48A40 /* XMGMeButten.m in Sources */,
 				1F045B9E1E8C8AB60025EF16 /* XMGWordViewController.m in Sources */,
+				1F5647211E95201A00C4AF97 /* XMGTopicViewController.m in Sources */,
 				1FB0E4DB1E80FFFD00A48A40 /* XMGWebController.m in Sources */,
 				705D9F2D1BEF2BBD003A9857 /* XMGLoginRegisterViewController.m in Sources */,
 				7038B51E1BEC5E4F005DBC09 /* XMGTabBarController.m in Sources */,
 				702896211BF09D3200C425C9 /* UITextField+XMGExtension.m in Sources */,
 				7038B51A1BEC5E4F005DBC09 /* XMGNewViewController.m in Sources */,
 				7038B5171BEC5E4F005DBC09 /* XMGEssenceViewController.m in Sources */,
+				1FB4C3E31E95C9E8004FCF4D /* XMGSeeBigViewController.m in Sources */,
 				7038B51F1BEC5E4F005DBC09 /* main.m in Sources */,
 				7038B5251BEC8EEB005DBC09 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */,
 				1F56470F1E9489D700C4AF97 /* XMGExtensionConfig.m in Sources */,
 				1F5647091E9487DD00C4AF97 /* XMGComment.m in Sources */,
+				1F5647241E9520E000C4AF97 /* XMGHTTPSessionManager.m in Sources */,
 				1F5647061E9478F100C4AF97 /* NSCalendar+XMGExtension.m in Sources */,
 				1F7EE4791E7E7B860003C43F /* XMGConst.m in Sources */,
 				1F045B951E8C8A580025EF16 /* XMGVideoViewController.m in Sources */,
+				1F56471D1E950E3500C4AF97 /* XMGTopicVoiceView.m in Sources */,
 				708B363D1BF02B75006C13B9 /* XMGLoginRegisterTextField.m in Sources */,
 				1F045B9B1E8C8A7B0025EF16 /* XMGPictureViewController.m in Sources */,
 				705D9F341BEF3B28003A9857 /* XMGQuickLoginButton.m in Sources */,
@@ -996,7 +994,6 @@
 		};
 		7057B7441BEAEFE9007D60F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAE849B55E4ED901C09A6BE8 /* Pods-5期-百思不得姐Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "5期-百思不得姐Tests/Info.plist";
@@ -1009,7 +1006,6 @@
 		};
 		7057B7451BEAEFE9007D60F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F193F6DF03199FE9BCC0BB /* Pods-5期-百思不得姐Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "5期-百思不得姐Tests/Info.plist";

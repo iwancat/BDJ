@@ -60,7 +60,7 @@ static NSString * const XMGTopicCellId = @"topic";
 
     // 注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGTopicCell class]) bundle:nil] forCellReuseIdentifier:XMGTopicCellId];
-    self.tableView.rowHeight = 250;
+    //self.tableView.rowHeight = 250;
 }
 
 -(void)setupRefresh
@@ -103,7 +103,7 @@ static NSString * const XMGTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    
+    params[@"type"] = @"1";
     // 发送请求
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         //        [responseObject writeToFile:@"/Users/xiaomage/Desktop/new_topics.plist" atomically:YES];
@@ -146,7 +146,7 @@ static NSString * const XMGTopicCellId = @"topic";
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"maxtime"] = self.maxtime;
-    
+    params[@"type"] = @"1";
     // 发送请求
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         // 存储这页对应的maxtime
@@ -200,6 +200,11 @@ static NSString * const XMGTopicCellId = @"topic";
     return cell;
 }
 
+#pragma mark - 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.topics[indexPath.row].cellHeight;
+}
 //自己做刷新的思路
 //- (void)setupRefresh
 //{

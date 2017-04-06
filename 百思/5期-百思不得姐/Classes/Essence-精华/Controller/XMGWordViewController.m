@@ -13,8 +13,11 @@
 @end
 
 @implementation XMGWordViewController
-
-- (void)viewDidLoad {
+- (XMGTopicType)type
+{
+    return XMGTopicTypeWord;
+}
+/*- (void)viewDidLoad {
     [super viewDidLoad];
     
     XMGLogFunc
@@ -43,6 +46,6 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %zd", [self class], indexPath.row];
     
     return cell;
-}
+}*/
 
 @end

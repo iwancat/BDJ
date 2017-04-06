@@ -10,6 +10,9 @@
 #import <UIImageView+WebCache.h>
 #import "XMGComment.h"
 #import "XMGUser.h"
+#import "XMGTopicPictureView.h"
+#import "XMGTopicVoiceView.h"
+#import "XMGTopicVideoView.h"
 
 @interface XMGTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -23,9 +26,51 @@
 /** 最热评论-整体 */
 @property (weak, nonatomic) IBOutlet UIView *topCmtView;
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+
+/* 中间控件 */
+/** 图片控件 */
+@property (nonatomic, weak) XMGTopicPictureView *pictureView;
+/** 声音控件 */
+@property (nonatomic, weak) XMGTopicVoiceView *voiceView;
+/** 视频控件 */
+@property (nonatomic, weak) XMGTopicVideoView *videoView;
 @end
 
 @implementation XMGTopicCell
+#pragma mark - 懒加载
+- (XMGTopicPictureView *)pictureView
+{
+    if (!_pictureView) {
+        XMGTopicPictureView *pictureView = [XMGTopicPictureView viewFromXib];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+
+- (XMGTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        XMGTopicVoiceView *voiceView = [XMGTopicVoiceView viewFromXib];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (XMGTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        XMGTopicVideoView *videoView = [XMGTopicVideoView viewFromXib];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
+
+
+
 - (IBAction)more {
     //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"我的标题" message:@"消息内容" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     //    [alert show];
@@ -58,10 +103,11 @@
     
     [self.window.rootViewController presentViewController:controller animated:YES completion:nil];
 }
-
+#pragma mark - 初始化
 - (void)awakeFromNib
 {
-    self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+    //self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+    self.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setTopic:(XMGTopic *)topic
@@ -134,7 +180,7 @@
         self.topCmtView.hidden = YES;
     }
     
-    // 中间内容
+   /* // 中间内容
 #pragma mark - 根据XMGTopic模型数据的情况来决定中间添加什么控件(内容)
     if (topic.type == XMGTopicTypeVideo) { // 视频
         
@@ -144,7 +190,35 @@
         
     } else if (topic.type == XMGTopicTypePicture) { // 图片
         
+    }*/
+    // 中间内容
+    if (topic.type == XMGTopicTypeVideo) { // 视频
+        self.videoView.hidden = NO;
+        self.videoView.frame = topic.contentF;
+        self.videoView.topic = topic;
+        
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else if (topic.type == XMGTopicTypeVoice) { // 音频
+        self.voiceView.hidden = NO;
+        self.voiceView.frame = topic.contentF;
+        self.voiceView.topic = topic;
+        
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else if (topic.type == XMGTopicTypeWord) { // 段子
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else if (topic.type == XMGTopicTypePicture) { // 图片
+        self.pictureView.hidden = NO;
+        self.pictureView.frame = topic.contentF;
+        self.pictureView.topic = topic;
+        
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
     }
+
 
 }
 

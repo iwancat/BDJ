@@ -13,8 +13,11 @@
 @end
 
 @implementation XMGVoiceViewController
-
-- (void)viewDidLoad {
+- (XMGTopicType)type
+{
+    return XMGTopicTypeVoice;
+}
+/*- (void)viewDidLoad {
     [super viewDidLoad];
     
     XMGLogFunc
@@ -44,5 +47,5 @@
     
     return cell;
 }
-
+*/
 @end

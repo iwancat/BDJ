@@ -14,6 +14,13 @@
 
 @implementation XMGVideoViewController
 
+
+- (XMGTopicType)type
+{
+    return XMGTopicTypeVideo;
+}
+
+/*
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,6 +51,6 @@
     
     return cell;
 }
-
+*/
 
 @end
