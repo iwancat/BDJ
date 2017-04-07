@@ -66,7 +66,7 @@
         // expectedSize : 图片的总大小
        // NSLog(@"test");
         CGFloat progress = 1.0 * receivedSize / expectedSize;
-        NSLog(@"%f",progress);
+        //NSLog(@"%f",progress);
         self.progressView.progress = progress;
         //NSLog(@"---%f",self.progressView.progress);
         self.progressView.hidden = NO;

@@ -13,6 +13,7 @@
 #import "XMGVoiceViewController.h"
 #import "XMGPictureViewController.h"
 #import "XMGWordViewController.h"
+#import "XMGRecommendTagViewController.h"
 
 @interface XMGEssenceViewController () <UIScrollViewDelegate>
 /** 当前选中的标题按钮 */
@@ -192,7 +193,8 @@
 
 - (void)tagClick
 {
-    XMGLogFunc
+    XMGRecommendTagViewController *tag = [[XMGRecommendTagViewController alloc] init];
+    [self.navigationController pushViewController:tag animated:YES];
 }
 #pragma mark - 添加子控制器的view
 - (void)addChildVcView

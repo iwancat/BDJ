@@ -21,6 +21,8 @@
 #import "NSString+NString_Extension.h"
 #import "NSDate+XMGExtension.h"
 #import "NSCalendar+XMGExtension.h"
+#import "UIImageView+XMGExtension.h"
+#import "UIImage+XMGExtension.h"
 
 #import "XMGConst.h"
 

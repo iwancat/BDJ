@@ -15,6 +15,7 @@
 #import "XMGRefreshFooter.h"
 #import "XMGTopicCell.h"
 #import "XMGNewViewController.h"
+#import "XMGCommentViewController.h"
 
 @interface XMGTopicViewController ()
 /** 所有的帖子数据 */
@@ -206,5 +207,10 @@ static NSString * const XMGTopicCellId = @"topic";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return self.topics[indexPath.row].cellHeight;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGCommentViewController *comment = [[XMGCommentViewController alloc] init];
+    [self.navigationController pushViewController:comment animated:YES];
 }
 @end
