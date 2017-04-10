@@ -53,6 +53,10 @@
 		1FD014FC1E9737F5001AFC28 /* UIImage+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD014FB1E9737F5001AFC28 /* UIImage+XMGExtension.m */; };
 		1FD015041E973D62001AFC28 /* XMGCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD015021E973D62001AFC28 /* XMGCommentViewController.m */; };
 		1FD015051E973D62001AFC28 /* XMGCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD015031E973D62001AFC28 /* XMGCommentViewController.xib */; };
+		1FD0150B1E97BDE5001AFC28 /* XMGCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD015071E97BDE5001AFC28 /* XMGCommentCell.m */; };
+		1FD0150C1E97BDE5001AFC28 /* XMGCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD015081E97BDE5001AFC28 /* XMGCommentCell.xib */; };
+		1FD0150D1E97BDE5001AFC28 /* XMGCommentSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0150A1E97BDE5001AFC28 /* XMGCommentSectionHeader.m */; };
+		1FE9200E1E9B793D00B0471E /* XMGTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9200D1E9B793D00B0471E /* XMGTopWindow.m */; };
 		1FEDEFF81E7FCD4E006341CB /* XMGMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDEFF71E7FCD4E006341CB /* XMGMeSquare.m */; };
 		702896211BF09D3200C425C9 /* UITextField+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 702896201BF09D3200C425C9 /* UITextField+XMGExtension.m */; };
 		7038B5171BEC5E4F005DBC09 /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7038B4F41BEC5E4F005DBC09 /* XMGEssenceViewController.m */; };
@@ -180,6 +184,13 @@
 		1FD015011E973D62001AFC28 /* XMGCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCommentViewController.h; sourceTree = "<group>"; };
 		1FD015021E973D62001AFC28 /* XMGCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCommentViewController.m; sourceTree = "<group>"; };
 		1FD015031E973D62001AFC28 /* XMGCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGCommentViewController.xib; sourceTree = "<group>"; };
+		1FD015061E97BDE5001AFC28 /* XMGCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCommentCell.h; sourceTree = "<group>"; };
+		1FD015071E97BDE5001AFC28 /* XMGCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCommentCell.m; sourceTree = "<group>"; };
+		1FD015081E97BDE5001AFC28 /* XMGCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGCommentCell.xib; sourceTree = "<group>"; };
+		1FD015091E97BDE5001AFC28 /* XMGCommentSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCommentSectionHeader.h; sourceTree = "<group>"; };
+		1FD0150A1E97BDE5001AFC28 /* XMGCommentSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCommentSectionHeader.m; sourceTree = "<group>"; };
+		1FE9200C1E9B793D00B0471E /* XMGTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopWindow.h; sourceTree = "<group>"; };
+		1FE9200D1E9B793D00B0471E /* XMGTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopWindow.m; sourceTree = "<group>"; };
 		1FEDEFF61E7FCD4E006341CB /* XMGMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeSquare.h; sourceTree = "<group>"; };
 		1FEDEFF71E7FCD4E006341CB /* XMGMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeSquare.m; sourceTree = "<group>"; };
 		5D61720453110FFD7AE7DD70 /* libPods-5期-百思不得姐Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5期-百思不得姐Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +302,11 @@
 		1FD015001E973D13001AFC28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FD015061E97BDE5001AFC28 /* XMGCommentCell.h */,
+				1FD015071E97BDE5001AFC28 /* XMGCommentCell.m */,
+				1FD015081E97BDE5001AFC28 /* XMGCommentCell.xib */,
+				1FD015091E97BDE5001AFC28 /* XMGCommentSectionHeader.h */,
+				1FD0150A1E97BDE5001AFC28 /* XMGCommentSectionHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -587,6 +603,8 @@
 				1F2AC9441E8DEABB00F07AA6 /* XMGRefreshHeader.m */,
 				1F2AC9461E8DF04600F07AA6 /* XMGRefreshFooter.h */,
 				1F2AC9471E8DF04600F07AA6 /* XMGRefreshFooter.m */,
+				1FE9200C1E9B793D00B0471E /* XMGTopWindow.h */,
+				1FE9200D1E9B793D00B0471E /* XMGTopWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -770,6 +788,7 @@
 			files = (
 				1F56471E1E950E3500C4AF97 /* XMGTopicVoiceView.xib in Resources */,
 				705D9F291BEF25CB003A9857 /* XMGFollowViewController.xib in Resources */,
+				1FD0150C1E97BDE5001AFC28 /* XMGCommentCell.xib in Resources */,
 				7057B7231BEAEFE8007D60F7 /* Assets.xcassets in Resources */,
 				1F2AC94D1E8E4CDB00F07AA6 /* XMGTopicCell.xib in Resources */,
 				1F56471C1E950E3500C4AF97 /* XMGTopicVideoView.xib in Resources */,
@@ -872,6 +891,7 @@
 				1F7EE47F1E7E7DF30003C43F /* XMGMeCell.m in Sources */,
 				1F470A641E8A8B1500130474 /* NSString+NString_Extension.m in Sources */,
 				1F2AC9421E8DDE5400F07AA6 /* XMGTopic.m in Sources */,
+				1FE9200E1E9B793D00B0471E /* XMGTopWindow.m in Sources */,
 				1FAE24771E8BDAF9007DBC82 /* XMGTitleButton.m in Sources */,
 				1FEDEFF81E7FCD4E006341CB /* XMGMeSquare.m in Sources */,
 				7038B5181BEC5E4F005DBC09 /* XMGFollowViewController.m in Sources */,
@@ -888,10 +908,12 @@
 				7038B5171BEC5E4F005DBC09 /* XMGEssenceViewController.m in Sources */,
 				1FD014F91E9737DB001AFC28 /* UIImageView+XMGExtension.m in Sources */,
 				1FD015041E973D62001AFC28 /* XMGCommentViewController.m in Sources */,
+				1FD0150B1E97BDE5001AFC28 /* XMGCommentCell.m in Sources */,
 				1FB4C3E31E95C9E8004FCF4D /* XMGSeeBigViewController.m in Sources */,
 				7038B51F1BEC5E4F005DBC09 /* main.m in Sources */,
 				7038B5251BEC8EEB005DBC09 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				1F7EE4761E7E7B4A0003C43F /* XMGMeFooterView.m in Sources */,
+				1FD0150D1E97BDE5001AFC28 /* XMGCommentSectionHeader.m in Sources */,
 				1F56470F1E9489D700C4AF97 /* XMGExtensionConfig.m in Sources */,
 				1F5647091E9487DD00C4AF97 /* XMGComment.m in Sources */,
 				1F5647241E9520E000C4AF97 /* XMGHTTPSessionManager.m in Sources */,

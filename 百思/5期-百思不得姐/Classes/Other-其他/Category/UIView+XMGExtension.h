@@ -21,4 +21,5 @@
 @property (nonatomic, assign) CGFloat xmg_bottom;
 
 + (instancetype)viewFromXib;
+- (BOOL)intersectWithView:(UIView *)view;
 @end

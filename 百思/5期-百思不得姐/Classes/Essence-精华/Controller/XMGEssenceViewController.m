@@ -159,6 +159,11 @@
 #pragma mark - 监听点击
 - (void)titleClick:(XMGTitleButton *)titleButton
 {
+    // 某个标题按钮被重复点击
+    if (titleButton == self.selectedTitleButton) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:XMGTitleButtonDidRepeatClickNotification object:nil];
+    }
+    
     // 控制按钮状态
     self.selectedTitleButton.selected = NO;
     titleButton.selected = YES;

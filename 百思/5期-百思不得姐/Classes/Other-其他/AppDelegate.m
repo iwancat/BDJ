@@ -8,24 +8,43 @@
 
 #import "AppDelegate.h"
 #import "XMGTabBarController.h"
+#import "XMGTopWindow.h"
 
-@interface AppDelegate ()
-
+@interface AppDelegate ()<UITabBarControllerDelegate>
+/** 记录上一次选中的子控制器的索引 */
+@property (nonatomic, assign) NSUInteger lastSelectedIndex;
 @end
 
 @implementation AppDelegate
 
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (tabBarController.selectedIndex == self.lastSelectedIndex) { // 重复点击了同一个TabBar按钮
+        // 发出通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:XMGTabBarButtonDidRepeatClickNotification object:nil];
+    }
+    
+    // 记录目前选中的索引
+    self.lastSelectedIndex = tabBarController.selectedIndex;
+}
 
+#pragma mark - <UIApplicationDelegate>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
     // 设置根控制器
-    self.window.rootViewController = [[XMGTabBarController alloc] init];
+    XMGTabBarController *rootVc = [[XMGTabBarController alloc] init];
+    rootVc.delegate = self;
+    self.window.rootViewController = rootVc;
     
     // 显示窗口
     [self.window makeKeyAndVisible];
+    
+    // 添加一个最高级别的顶层window
+    [XMGTopWindow show];
     return YES;
 }
 

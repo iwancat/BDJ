@@ -6,8 +6,8 @@
 //  Copyright © 2015年 xiaomage. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XMGEssenceViewController.h"
 
-@interface XMGNewViewController : UIViewController
+@interface XMGNewViewController : XMGEssenceViewController
 
 @end

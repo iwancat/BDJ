@@ -32,6 +32,8 @@ typedef NS_ENUM(NSUInteger, XMGTopicType) {
 @class XMGComment;
 
 @interface XMGTopic : NSObject
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */

@@ -25,6 +25,8 @@
 #import "UIImage+XMGExtension.h"
 
 #import "XMGConst.h"
+/*** 评论-头部控件-字体 ***/
+#define XMGCommentSectionHeaderFont [UIFont systemFontOfSize:15]
 
 /*** 当前系统版本判断 ***/
 #define iOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))

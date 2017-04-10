@@ -15,15 +15,19 @@
 
 + (void)load
 {
-    [XMGTopic mj_setupObjectClassInArray:^NSDictionary *{
-        return @{@"top_cmt" : [XMGComment class]};
-    }];
+  //  [XMGTopic mj_setupObjectClassInArray:^NSDictionary *{
+  //      return @{@"top_cmt" : [XMGComment class]};
+   // }];
     
     [XMGTopic mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-        return @{@"top_cmt" : @"top_cmt[0]",
+        return @{
+                 @"top_cmt" : @"top_cmt[0]",
                  @"small_image" : @"image0",
                  @"middle_image" : @"image2",
                  @"large_image" : @"image1"};
+    }];
+    [NSObject mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+        return @{@"ID" : @"id"};
     }];
 }
 @end

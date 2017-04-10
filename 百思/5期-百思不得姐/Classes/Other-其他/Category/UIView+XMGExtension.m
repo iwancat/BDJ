@@ -119,4 +119,11 @@
 {
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
 }
+- (BOOL)intersectWithView:(UIView *)view
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    CGRect selfRect = [self convertRect:self.bounds toView:window];
+    CGRect viewRect = [view convertRect:view.bounds toView:window];
+    return CGRectIntersectsRect(selfRect, viewRect);
+}
 @end

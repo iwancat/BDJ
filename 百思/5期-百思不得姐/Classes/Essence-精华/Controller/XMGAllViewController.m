@@ -205,6 +205,9 @@ static NSString * const XMGTopicCellId = @"topic";
 {
     return self.topics[indexPath.row].cellHeight;
 }
+
+
+
 //自己做刷新的思路
 //- (void)setupRefresh
 //{
