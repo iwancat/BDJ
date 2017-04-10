@@ -7,27 +7,39 @@
 //
 
 #import "XMGAllViewController.h"
-#import <AFNetworking.h>
-#import "XMGTopic.h"
-#import "MJExtension.h"
-#import <UIImageView+WebCache.h>
-#import "XMGRefreshHeader.h"
-#import "XMGRefreshFooter.h"
-#import "XMGTopic.h"
-#import "XMGTopicCell.h"
+//#import <AFNetworking.h>
+//#import "XMGTopic.h"
+//#import "MJExtension.h"
+//#import <UIImageView+WebCache.h>
+//#import "XMGRefreshHeader.h"
+//#import "XMGRefreshFooter.h"
+//#import "XMGTopic.h"
+//#import "XMGTopicCell.h"
 
 @interface XMGAllViewController ()
+
 /** 所有的帖子数据 */
-@property (nonatomic, strong) NSMutableArray<XMGTopic *> *topics;
+//@property (nonatomic, strong) NSMutableArray<XMGTopic *> *topics;
 /** maxtime : 用来加载下一页数据 */
-@property (nonatomic, copy) NSString *maxtime;
+//@property (nonatomic, copy) NSString *maxtime;
 /** 任务管理者 */
-@property (nonatomic, strong) AFHTTPSessionManager *manager;
+//@property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
 
 @implementation XMGAllViewController
+
+
+- (XMGTopicType)type
+{
+    return XMGTopicTypeAll;
+}
+
+
+/*
 static NSString * const XMGTopicCellId = @"topic";
 #pragma mark -懒加载
+
 - (AFHTTPSessionManager *)manager
 {
     if (!_manager) {
@@ -69,10 +81,11 @@ static NSString * const XMGTopicCellId = @"topic";
     [self.tableView.mj_header beginRefreshing];
     self.tableView.mj_footer = [XMGRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
-
+*/
+/*
 #pragma mark - 数据加载
 
-/*
+
  self.topics = @[20, 19, 18];
  
  
@@ -84,9 +97,9 @@ static NSString * const XMGTopicCellId = @"topic";
  
  上拉 -> 下拉
  self.topics = @[22, 21, 20];
- */
-
-
+ 
+*/
+/*
 - (void)loadNewTopics
 {
     
@@ -173,40 +186,42 @@ static NSString * const XMGTopicCellId = @"topic";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.topics.count;
 }
+*/
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*
-    // 1.确定重用标示:
-    static NSString *ID = @"cell";
-    
-    // 2.从缓存池中取
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    // 3.如果空就手动创建
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-        cell.backgroundColor = XMGRandomColor;
-    }
-    
-    // 4.显示数据
-    XMGTopic *topic = self.topics[indexPath.row];
-    cell.textLabel.text = topic.name;
-    cell.detailTextLabel.text = topic.text;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];*/
+/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
 
     XMGTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGTopicCellId];
     
     cell.topic = self.topics[indexPath.row];
 
     return cell;
-}
-
+}*/
+/*
+ // 1.确定重用标示:
+ static NSString *ID = @"cell";
+ 
+ // 2.从缓存池中取
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+ // 3.如果空就手动创建
+ if (!cell) {
+ cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+ cell.backgroundColor = XMGRandomColor;
+ }
+ 
+ // 4.显示数据
+ XMGTopic *topic = self.topics[indexPath.row];
+ cell.textLabel.text = topic.name;
+ cell.detailTextLabel.text = topic.text;
+ [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];*/
+/*
 #pragma mark - 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return self.topics[indexPath.row].cellHeight;
 }
 
-
+*/
 
 //自己做刷新的思路
 //- (void)setupRefresh
